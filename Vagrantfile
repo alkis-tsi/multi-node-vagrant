@@ -14,8 +14,8 @@ cat << EOF
 EOF
 yum update
 yum install epel-release -y
-yum install git
-yum install vim
+yum install git -y
+yum install vim -y
 yum install ansible -y
 SCRIPT
 
