@@ -2,7 +2,7 @@
 
 ## Script to install necessary packages and ansible for Centos test box.
 ## Comment out anything you do not want to install
-$update_ansible_centos = <<-SCRIPT
+$update_packages_centos = <<-SCRIPT
 cat << EOF
 --------- Installing Updates ---------
     ()
@@ -21,7 +21,7 @@ SCRIPT
 
 ## Script to install necessary packages and ansible for Ubuntu test box.
 ## Comment out anything you do not want to install
-$update_ansible_ubuntu = <<-SCRIPT
+$update_packages_ubuntu = <<-SCRIPT
 cat << EOF
 --------- Installing Updates ---------
     ()
