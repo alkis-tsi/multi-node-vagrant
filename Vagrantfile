@@ -68,6 +68,7 @@ Vagrant.configure("2") do |config|
                 vm.customize ["modifyvm", :id, "--cpus", machine[:cpu]]
             end
             node.vm.provision "shell", inline: $update_packages_centos ## change it to the ubuntu script if the OS is ubuntu
+            node.vm.provision :file, source: '~/.vagrant.d/insecure_private_key', destination: '/home/vagrant/.ssh/id_rsa'
         end
     end
 end
